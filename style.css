@@ -174,6 +174,227 @@ body{
     color: yellow
 }
 
+/* FAQ Page */
+
+.faq-container{
+    background-image: url(istockphoto-123359769-170667a.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 10px;
+    display: none;
+}
+
+.faq-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 25px;
+    padding: 30px 90px 30px 60px;
+    box-shadow: 4px 4px 8px black;
+    margin-top: 60px;
+    margin-left: 250px;
+}
+
+.image-box{
+    height: 360px;
+    width: 350px;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.faq-page-text .title{
+    font-size: 35px;
+    font-weight: 600;
+    color: blue;
+    text-shadow: 2px 2px 4px black;
+}
+
+.faq-page-text .faq-text{
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: scroll;
+}
+
+.faq-text::-webkit-scrollbar{
+    display: none;
+}
+
+.faq-page-text .faq-text li{
+    list-style: none;
+}
+
+.faq-page-text .faq-text .question-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-page-text .faq-text .question-arrow i{
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.faq-page-text .faq-text .question-arrow i:hover{
+    color: red;
+}
+
+.faq-page-text .faq-text li .line{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.faq-page-text .faq-text .question-arrow .question{
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.question:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.html-faq{
+    width: 96%;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.css-faq{
+    width: 96%;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.js-faq{
+    width: 96%;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.react-faq{
+    width: 96%;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.node-faq{
+    width: 96%;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+/* Terms & Conditions */
+
+.teams-condition-page {
+    background-image: url(istockphoto-1370678535-170667a.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    display: none;
+}
+
+.terms-box{
+    margin-top: 40px;
+    margin-left: 400px;
+    max-width: 500px;
+    color: black;
+    background-color: transparent;
+    padding: 60px 30px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: scroll;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: blue;
+}
+
+.terms-text h2{
+    text-transform: uppercase;
+    color: blue;
+    text-shadow: 2px 2px 4px black;
+}
+
+.terms-text h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.button{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 40px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+.blue-btn{
+    background-color: blue;
+    border: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.gray-btn{
+    background-color: grey;
+    border: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.para{
+    padding-top: 20px;
+}
+
+.check-box{
+    margin-right: 15px;
+}
 
 
 @media screen and (max-width: 700px){
@@ -255,3 +476,21 @@ body{
         margin-bottom: 30px;
         background-color: blue;
     }
+
+    .faq-page{
+        max-width: 350px;
+        padding: 10px 10px 10px 10px;
+        margin-left: 1px;
+    }
+
+    .faq-page-text .faq-text .question-arrow .question{
+        font-size: 12px;
+    }
+
+    .terms-box{
+        margin-top: 40px;
+        margin-left: 1px;
+        max-width: 450px;
+        padding: 40px 20px;
+    }
+}
